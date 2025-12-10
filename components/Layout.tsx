@@ -85,11 +85,8 @@ const Layout: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-luxury-dark text-white py-16 border-t border-gold-600 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 bg-pattern-luxury opacity-[0.05] pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+      <footer className="bg-luxury-dark text-white py-16 border-t border-gold-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <span className="text-2xl tracking-widest font-bold">
               HEEMAT<span className="text-gold-400">LUX</span>

@@ -6,18 +6,14 @@ import { TESTIMONIALS, TIERS } from '../constants';
 
 const Home: React.FC = () => {
   return (
-    <div className="animate-fade-in overflow-hidden">
+    <div className="animate-fade-in">
       {/* Hero Section */}
       <section className="relative h-[95vh] flex items-center justify-center overflow-hidden bg-luxury-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-luxury-dark via-[#2a2a2a] to-black"></div>
-        {/* Abstract Background Pattern */}
-        <div className="absolute inset-0 bg-pattern-luxury opacity-30"></div>
-        {/* Abstract Glow Orb */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-gold-300/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-400 via-transparent to-transparent"></div>
         
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto mt-12">
-          <div className="mb-6 inline-flex items-center space-x-2 px-6 py-2 border border-gold-400/50 rounded-full bg-black/40 backdrop-blur-md animate-fade-in-down shadow-lg shadow-gold-900/20">
+          <div className="mb-6 inline-flex items-center space-x-2 px-6 py-2 border border-gold-400/50 rounded-full bg-black/40 backdrop-blur-md animate-fade-in-down">
              <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
              <span className="text-gold-200 text-xs tracking-[0.2em] uppercase font-bold">Ramadan Cohort Enrolling Now</span>
           </div>
@@ -40,9 +36,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Partnership Banner */}
-      <section className="bg-gold-50 py-16 relative">
-        <div className="absolute inset-0 bg-pattern-grid opacity-30"></div>
-        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
+      <section className="bg-gold-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-luxury-dark uppercase tracking-widest text-xs mb-4 text-gray-500">In Exclusive Partnership With</p>
           <div className="flex justify-center items-center space-x-4 mb-4">
              <span className="font-bold text-2xl md:text-3xl text-luxury-black">HeematLux</span>
@@ -57,11 +52,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* How It Works (Trust Building) */}
-      <section className="py-24 bg-white relative">
-        {/* Soft side glow */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-gold-100/40 blur-3xl rounded-full -translate-x-1/2"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-16">
              <h2 className="text-3xl md:text-4xl font-bold mb-4">Your Path to Profit</h2>
              <p className="text-gray-600">Three simple steps to financial independence this season.</p>
@@ -76,7 +68,7 @@ const Home: React.FC = () => {
                { icon: "02", title: "Join The Circle", desc: "Get instant access to our exclusive WhatsApp training groups and mentors." },
                { icon: "03", title: "Learn & Earn", desc: "Master the designs that are in high demand and start booking clients immediately." }
              ].map((step, idx) => (
-               <div key={idx} className="bg-white/80 backdrop-blur-sm p-6 text-center rounded-lg border border-transparent hover:border-gold-100 transition-all duration-300">
+               <div key={idx} className="bg-white p-6 text-center">
                   <div className="w-24 h-24 mx-auto bg-luxury-black text-gold-400 rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl border-4 border-gold-100">
                     {step.icon}
                   </div>
@@ -89,23 +81,22 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-luxury-gray relative">
-        <div className="absolute inset-0 bg-pattern-luxury opacity-[0.03]"></div>
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-           <div className="h-96 rounded-sm shadow-2xl shadow-gold-900/10 overflow-hidden relative group border border-white">
+      <section className="py-20 bg-luxury-gray">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+           <div className="h-96 rounded-sm shadow-xl overflow-hidden relative group">
              <img 
                src="https://images.unsplash.com/photo-1598394625234-712808c148e6?q=80&w=800&auto=format&fit=crop" 
                alt="Premium Henna Quality" 
                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
              />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:bg-transparent transition-colors duration-300"></div>
+             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
            </div>
            <div>
              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why HeematLux?</h2>
              <div className="space-y-8">
                <div className="flex">
                  <div className="flex-shrink-0 mr-4">
-                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl shadow-inner">💎</div>
+                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl">💎</div>
                  </div>
                  <div>
                    <h4 className="text-xl font-bold mb-2">Premium Curriculum</h4>
@@ -114,7 +105,7 @@ const Home: React.FC = () => {
                </div>
                <div className="flex">
                  <div className="flex-shrink-0 mr-4">
-                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl shadow-inner">💰</div>
+                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl">💰</div>
                  </div>
                  <div>
                    <h4 className="text-xl font-bold mb-2">Income Focused</h4>
@@ -123,7 +114,7 @@ const Home: React.FC = () => {
                </div>
                <div className="flex">
                  <div className="flex-shrink-0 mr-4">
-                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl shadow-inner">🤝</div>
+                   <div className="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-full flex items-center justify-center text-xl">🤝</div>
                  </div>
                  <div>
                    <h4 className="text-xl font-bold mb-2">Lifetime Community</h4>
@@ -136,13 +127,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* PRICING SECTION ON HOME PAGE */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full h-full bg-pattern-grid opacity-30 pointer-events-none"></div>
-        {/* Soft Background Blur Orbs */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-50/80 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gray-50/80 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-24 bg-white relative">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gold-50/50 -z-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-gold-500 font-bold tracking-widest uppercase text-sm">Registration Closing Soon</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-6">Choose Your Level</h2>
@@ -168,9 +155,6 @@ const Home: React.FC = () => {
 
       {/* Testimonials */}
       <section className="py-24 bg-white relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-10 left-10 text-[200px] text-gray-50 opacity-[0.03] font-serif leading-none select-none">“</div>
-
          <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
              <h2 className="text-3xl md:text-4xl text-luxury-black font-bold">Success Stories</h2>
@@ -179,7 +163,7 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="bg-gray-50 p-8 border border-gray-100 shadow-sm hover:shadow-lg transition duration-500 relative bg-opacity-60 backdrop-blur-sm">
+              <div key={i} className="bg-gray-50 p-8 border border-gray-100 shadow-sm hover:shadow-lg transition duration-500 relative">
                 <div className="absolute top-6 right-8 text-6xl text-gold-200 leading-none opacity-50">"</div>
                 <div className="flex text-gold-400 mb-4">★★★★★</div>
                 <p className="text-gray-700 mb-6 italic relative z-10">{t.text}</p>
@@ -194,13 +178,12 @@ const Home: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-luxury-gradient text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-pattern-luxury opacity-10 mix-blend-overlay"></div>
-        <div className="max-w-3xl mx-auto px-4 relative z-10">
+      <section className="py-24 bg-luxury-gradient text-center">
+        <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-6 text-luxury-black">Don't Miss The Ramadan Rush</h2>
           <p className="text-luxury-black/80 mb-10 text-xl font-medium">The biggest earning season of the year is approaching. Will you be ready?</p>
           <Link to="/pricing">
-             <Button className="px-12 py-4 text-lg bg-luxury-black text-white hover:bg-gray-800 shadow-xl border border-luxury-black/20">Get Started Now</Button>
+             <Button className="px-12 py-4 text-lg bg-luxury-black text-white hover:bg-gray-800 shadow-xl">Get Started Now</Button>
           </Link>
         </div>
       </section>

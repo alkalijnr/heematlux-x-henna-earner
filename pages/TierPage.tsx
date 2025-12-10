@@ -24,7 +24,6 @@ const TierPage: React.FC = () => {
       <div className="bg-luxury-black text-white py-16 md:py-24 relative overflow-hidden">
         {/* Background Overlay for Texture */}
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-luxury-black via-gray-900 to-luxury-black"></div>
-        <div className="absolute inset-0 bg-pattern-luxury opacity-10"></div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
@@ -32,10 +31,8 @@ const TierPage: React.FC = () => {
              <h1 className="text-4xl md:text-6xl font-bold mb-6">{tier.tagline}</h1>
              <p className="text-gray-300 text-lg max-w-xl">{tier.description}</p>
           </div>
-          <div className="flex-1 flex justify-center relative">
-             {/* Glow behind price */}
-             <div className="absolute inset-0 bg-gold-400/20 blur-3xl rounded-full"></div>
-             <div className="bg-white/10 p-2 rounded-full border border-gold-500/30 backdrop-blur-sm relative z-10">
+          <div className="flex-1 flex justify-center">
+             <div className="bg-white/10 p-2 rounded-full border border-gold-500/30 backdrop-blur-sm">
                 <span className="block bg-gold-500 text-luxury-black font-bold text-3xl px-8 py-8 rounded-full shadow-lg">
                   {tier.price}
                 </span>
@@ -44,11 +41,8 @@ const TierPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
-        {/* Background graphic */}
-        <div className="absolute top-0 left-0 w-full h-full bg-pattern-grid opacity-[0.03] pointer-events-none"></div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-12">
@@ -60,10 +54,9 @@ const TierPage: React.FC = () => {
             </section>
 
             {/* What's Included */}
-            <section className="bg-gold-50 p-8 rounded-sm border border-gold-100 relative overflow-hidden">
-               <div className="absolute right-0 bottom-0 w-32 h-32 bg-gold-200/20 rounded-full blur-2xl"></div>
-              <h3 className="text-2xl font-bold mb-6 relative z-10">What's Included</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10">
+            <section className="bg-gold-50 p-8 rounded-sm border border-gold-100">
+              <h3 className="text-2xl font-bold mb-6">What's Included</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {tier.includes.map((item, i) => (
                   <div key={i} className="flex items-start">
                     <span className="text-gold-500 mr-3 mt-1">✦</span>
@@ -79,7 +72,7 @@ const TierPage: React.FC = () => {
               <ul className="space-y-4">
                 {tier.benefits.map((benefit, i) => (
                    <li key={i} className="flex items-center text-lg text-gray-700">
-                     <span className="w-2 h-2 bg-gold-400 rounded-full mr-4 shadow-sm"></span>
+                     <span className="w-2 h-2 bg-gold-400 rounded-full mr-4"></span>
                      {benefit}
                    </li>
                 ))}
@@ -88,9 +81,8 @@ const TierPage: React.FC = () => {
 
             {/* Mockup Placeholder */}
             <section className="relative mt-8 group">
-              <div className="w-full h-80 bg-gold-100 rounded-sm shadow-xl flex items-center justify-center border border-gold-200 overflow-hidden relative">
-                 <div className="absolute inset-0 bg-pattern-grid opacity-20"></div>
-                 <div className="text-center relative z-10">
+              <div className="w-full h-80 bg-gold-100 rounded-sm shadow-xl flex items-center justify-center border border-gold-200">
+                 <div className="text-center">
                     <span className="block text-4xl mb-2">📦</span>
                     <span className="text-gold-600 uppercase tracking-widest text-sm font-bold">Premium Course Material</span>
                  </div>
