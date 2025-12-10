@@ -85,7 +85,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
            <div className="h-96 rounded-sm shadow-xl overflow-hidden relative group">
              <img 
-               src="https://images.unsplash.com/photo-1550614000-4b9519e0034a?q=80&w=800&auto=format&fit=crop" 
+               src="https://images.unsplash.com/photo-1598394625234-712808c148e6?q=80&w=800&auto=format&fit=crop" 
                alt="Premium Henna Quality" 
                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
              />
