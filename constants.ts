@@ -66,7 +66,7 @@ export const TIERS: Record<string, TierDetail> = {
 export const FAQS: FAQItem[] = [
   {
     question: "When does the training start?",
-    answer: "Our training is designed to be flexible yet structured. Once you join a group, you will receive the schedule. We focus on getting you ready before the peak season begins."
+    answer: "Training starts immediately in January. The curriculum is designed to be fast-tracked so you can finish learning and master the skills completely before Ramadan begins."
   },
   {
     question: "Do I need to know how to draw?",

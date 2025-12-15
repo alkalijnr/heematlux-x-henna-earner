@@ -17,11 +17,11 @@ const Payment: React.FC = () => {
             <p className="mb-4 text-base font-normal text-gray-500">Send the exact amount for your chosen tier to the account below.</p>
             <div className="bg-gray-50 p-6 rounded-md border border-gray-200">
                <p className="text-sm text-gray-500 uppercase tracking-wide">Bank Name</p>
-               <p className="font-bold text-lg mb-2">GTBank</p>
+               <p className="font-bold text-lg mb-2">GT Bank</p>
                <p className="text-sm text-gray-500 uppercase tracking-wide">Account Number</p>
-               <p className="font-mono font-bold text-2xl tracking-wider text-luxury-black mb-2">0123456789</p>
+               <p className="font-mono font-bold text-2xl tracking-wider text-luxury-black mb-2">0515583770</p>
                <p className="text-sm text-gray-500 uppercase tracking-wide">Account Name</p>
-               <p className="font-bold text-lg">HeematLux Ventures</p>
+               <p className="font-bold text-lg">Rahimatu Ahmed</p>
             </div>
           </li>
           <li className="mb-10 ml-6">
@@ -33,7 +33,7 @@ const Payment: React.FC = () => {
             <span className="absolute flex items-center justify-center w-8 h-8 bg-gold-400 rounded-full -left-4 ring-4 ring-white text-white font-bold">3</span>
             <h3 className="mb-1 text-lg font-semibold text-gray-900">Confirm on WhatsApp</h3>
             <p className="text-base font-normal text-gray-500 mb-6">Send your payment proof to our admin to be added to the exclusive training group.</p>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/2349052872335" target="_blank" rel="noopener noreferrer">
               <Button>Send Proof on WhatsApp</Button>
             </a>
           </li>

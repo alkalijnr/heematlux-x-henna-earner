@@ -8,6 +8,16 @@ const Layout: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // 1. Force scroll to top immediately on mount
+    window.scrollTo(0, 0);
+
+    // 2. Disable browser's default scroll restoration behavior
+    // This prevents the browser from jumping down to previous scroll positions (like the Programs section)
+    // when the user refreshes the page.
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -17,6 +27,7 @@ const Layout: React.FC = () => {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    // Ensure scroll to top on route change as well
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -108,9 +119,9 @@ const Layout: React.FC = () => {
           <div>
             <h4 className="text-gold-400 text-lg mb-4 font-bold">Connect</h4>
             <div className="flex space-x-4">
-              <SocialLink href="#" label="Instagram" />
+              <SocialLink href="https://www.instagram.com/raheematahmed?igsh=MTQzcWRqaHhmbzZyNg==" label="Instagram" />
               <SocialLink href="#" label="TikTok" />
-              <SocialLink href="https://wa.me/1234567890" label="WhatsApp" />
+              <SocialLink href="https://wa.me/2349052872335" label="WhatsApp" />
             </div>
             <p className="mt-6 text-xs text-gray-500">
               © {new Date().getFullYear()} HeematLux. All rights reserved. <br/>

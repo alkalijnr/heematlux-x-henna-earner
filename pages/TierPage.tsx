@@ -16,7 +16,7 @@ const TierPage: React.FC = () => {
   }
 
   const whatsappMessage = encodeURIComponent(`Hello HeematLux, I have paid for the ${tier.name} Tier (${tier.price}). Please add me to the group.`);
-  const whatsappLink = `https://wa.me/1234567890?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/2349052872335?text=${whatsappMessage}`;
 
   return (
     <div className="animate-fade-in pt-20">
@@ -125,8 +125,8 @@ const TierPage: React.FC = () => {
 
               <div className="bg-gray-50 p-4 mb-6 rounded border border-dashed border-gray-300">
                 <p className="text-xs text-center text-gray-500 uppercase mb-2">Bank Transfer Details</p>
-                <p className="font-mono text-center font-bold text-lg text-gray-800">0123456789</p>
-                <p className="text-center text-sm text-gray-600">GTBank • HeematLux Ventures</p>
+                <p className="font-mono text-center font-bold text-lg text-gray-800">0515583770</p>
+                <p className="text-center text-sm text-gray-600">GT Bank • Rahimatu Ahmed</p>
               </div>
 
               <p className="text-xs text-gray-400 text-center mb-6">
